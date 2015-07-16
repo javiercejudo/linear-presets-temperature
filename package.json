@@ -1,6 +1,6 @@
 {
   "name": "linear-presets-temperature",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Linear presets for temperature units",
   "main": "src/linear-presets-temperature.js",
   "scripts": {
