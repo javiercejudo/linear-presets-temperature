@@ -25,4 +25,5 @@ Base: [Celsius](https://en.wikipedia.org/wiki/Celsius)
 ## Related projects
 
 - [linear-presets](https://github.com/javiercejudo/linear-presets): linear presets for common units.
+- [linear-presets-temperature-difference](https://github.com/javiercejudo/linear-presets-temperature-difference): linear presets for temperature difference.
 - [linear-converter](https://github.com/javiercejudo/linear-converter): flexible linear converter.
