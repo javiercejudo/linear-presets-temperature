@@ -4,16 +4,17 @@
 
 require('should');
 
-var rescale = require('rescale')(require('floating-adapter')).rescale;
+var Decimal = require('linear-arbitrary-precision')(require('floating-adapter'));
+var rescale = require('rescale')(Decimal).rescale;
 var temp = require('linear-preset-factory')(require('../src/linear-presets-temperature'));
 
 function convert(x, preset) {
-  return rescale(x, preset[0], preset[1]);
-};
+  return Number(rescale(preset[0], preset[1], x));
+}
 
 function invert(preset) {
   return preset.slice(0).reverse();
-};
+}
 
 describe('temperature presets', function() {
   it('should convert correctly', function() {
